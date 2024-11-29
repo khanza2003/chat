@@ -1,0 +1,64 @@
+.vh {
+    height: 100vh !important;
+    background: #dff2fa;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.card {
+    padding: 20px; /* Reduced padding to give more space for content */
+    margin-top: 20px; /* Reduced margin to fit content better */
+    background: linear-gradient(to right, #add8e6, #ffc0cb);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.chat-height {
+    height: calc(100% - 80px) !important; /* Adjusted for the height of the input and header */
+    overflow-y: auto; /* Added this to enable scrolling */
+}
+
+.chat-window {
+    z-index: 100;
+    height: 100%;
+    overflow: hidden;
+}
+
+.chat-message-left, .chat-message-right {
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 10px; /* Added margin for message separation */
+}
+
+.chat-message-left {
+    margin-right: auto;
+    text-align: left; /* Ensures the left messages are aligned to the left */
+}
+
+.chat-message-right {
+    flex-direction: row-reverse;
+    margin-left: auto;
+    text-align: right; /* Ensures the right messages are aligned to the right */
+}
+
+.chat-message-left .chat-content, .chat-message-right .chat-content {
+    max-width: 80%; /* Prevents messages from taking up full width */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+}
+
+.chat-input {
+    position: sticky;
+    bottom: 0;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.styles_scrollable-div__prSCv {
+    max-height: calc(100% - 2px) !important;
+    height: calc(100% - 2px) !important;
+    overflow-y: auto;
+}
